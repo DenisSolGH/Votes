@@ -1,0 +1,52 @@
+<header class="header">
+    <nav class="navbar">
+        <div class="search">
+            <div class="icon"></div>
+            <form class="input" action="search.php">
+                <input type="text" placeholder="Search" name="query" id="MySearch">
+            </form>
+            <span class="clear"></span>
+        </div>
+        <ul class="nav_menu">
+        <li class="nav_item">
+            <a target="" href="index.php" class="nav_link">Главная</a>
+        </li>
+        <li class="nav_item">
+            <a target="" href="pages.php" class="nav_link">Мессенджеры</a>
+        </li>
+        <li class="nav_item">
+            <a href="#" class="nav_link" id="openRegistration">Зарегистрироваться</a>
+        </li>
+    </ul>
+    
+    <div class="hamb">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    </nav>
+    <div class="modal" id="registrationModal" style="display: none;">
+        <div class="modal_box">
+            <span class="close" onclick="closeRegistrationForm()">&times;</span>
+            <form class="formreg" method="POST" action="">
+                <div>
+                    <label for="first_name">Имя</label>
+                    <input type="text" name="first_name" required>
+                </div>
+                <div>
+                    <label for="last_name">Фамилия</label>
+                    <input type="text" name="last_name" required>
+                </div>
+                <div>
+                    <label for="age">Возраст</label>
+                    <input type="number" name="age" required>
+                </div>
+                <div>
+                    <label for="phone_number">Телефон</label>
+                    <input type="tel" name="phone_number" required>
+                </div>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+</header>
